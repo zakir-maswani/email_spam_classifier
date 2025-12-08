@@ -3,8 +3,8 @@ import pickle
 import string
 from text_transformation import transform_text
 
-tfidf = pickle.load(open('vectorizer', 'rb'))
-model = pickle.load(open(r'model', 'rb'))
+tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+model = pickle.load(open(r'model.pkl', 'rb'))
 
 
 st.set_page_config(page_title="Spam Classifier", page_icon="📧", layout="centered")
