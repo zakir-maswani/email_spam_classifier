@@ -3,7 +3,7 @@ import pickle
 import string
 from text_transformation import transform_text
 
-tfidf = pickle.load(open('vectorizer.pkl', 'rb'))
+tfidf = pickle.load(open(r'vectorizer.pkl', 'rb'))
 model = pickle.load(open(r'model.pkl', 'rb'))
 
 
