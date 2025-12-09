@@ -1,10 +1,18 @@
 import streamlit as st
 import pickle
 import string
+import os
 from text_transformation import transform_text
+import pickle
+import os
 
-tfidf = pickle.load(open(r"/email_spam_classifier/vectorizer.pkl", "rb"))
-model = pickle.load(open(r"/email_spam_classifier/model.pkl", "rb"))
+base_path = os.path.dirname(__file__)
+
+tfidf_path = os.path.join(base_path, "vectorizer.pkl")
+model_path = os.path.join(base_path, "model.pkl")
+
+tfidf = pickle.load(open(tfidf_path, "rb"))
+model = pickle.load(open(model_path, "rb"))
 
 st.set_page_config(page_title="Spam Classifier", page_icon="📧", layout="centered")
 
