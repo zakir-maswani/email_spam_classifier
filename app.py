@@ -3,7 +3,7 @@ import pickle
 import string
 from text_transformation import transform_text
 
-with open("vectorizer.pkl", "rb") as file:
+with open(r"/mount/src/email_spam_classifier/vectorizer.pkl", "rb") as file:
     tfidf = pickle.load()
     
 with open("model.pkl", "rb") as file:
