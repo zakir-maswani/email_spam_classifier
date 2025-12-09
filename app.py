@@ -5,6 +5,23 @@ import os
 from text_transformation import transform_text
 import os
 
+import nltk
+
+try:
+    nltk.data.find("tokenizers/punkt")
+except:
+    nltk.download("punkt")
+
+try:
+    nltk.data.find("tokenizers/punkt_tab")
+except:
+    nltk.download("punkt_tab")
+
+try:
+    nltk.data.find("corpora/stopwords")
+except:
+    nltk.download("stopwords")
+
 base_path = os.path.dirname(__file__)
 
 tfidf_path = os.path.join(base_path, "vectorizer.pkl")
