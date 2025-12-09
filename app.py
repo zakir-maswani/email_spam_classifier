@@ -4,10 +4,10 @@ import string
 from text_transformation import transform_text
 
 with open("vectorizer.pkl", "rb") as file:
-    tfidf = file.load()
+    tfidf = pickle.load()
     
 with open("model.pkl", "rb") as file:
-    model = file.load()
+    model = pickle.load()
 
 st.set_page_config(page_title="Spam Classifier", page_icon="📧", layout="centered")
 
