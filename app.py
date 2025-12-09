@@ -3,7 +3,6 @@ import pickle
 import string
 import os
 from text_transformation import transform_text
-import pickle
 import os
 
 base_path = os.path.dirname(__file__)
