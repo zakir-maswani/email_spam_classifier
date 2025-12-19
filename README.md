@@ -3,14 +3,36 @@
 A production-ready Email Spam Classifier built using Machine Learning and NLP techniques.
 
 ## 📁 Project Structure
-- data/
-  - raw/: Original dataset
-  - processed/: Cleaned and preprocessed data
-- notebooks/: Jupyter notebooks for EDA & training
-- src/: Modular application code
-- models/: Trained ML model & vectorizer
-- tests/: Unit tests
-- requirements.txt: Dependencies
+email-spam-classifier/
+│
+├── data/
+│   ├── raw/
+│   │   └── emails_dataset.csv
+│   │
+│   └── processed/
+│       └── preprocessed_data.csv
+│
+├── models/
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+├── notebooks/
+│   ├── data_preparation.ipynb
+│   └── model_training.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── app.py
+│   └── text_transformation.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_app.py
+│   └── test_text_transformation.py
+│
+├── requirements.txt
+├── .gitignore
+└── README.md
 
 ## ⚙️ Workflow
 1. Data preprocessing & cleaning
