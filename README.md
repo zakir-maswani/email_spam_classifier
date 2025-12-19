@@ -1,8 +1,27 @@
 # 📧 Email Spam Classifier
 
-A production-ready Email Spam Classifier built using Machine Learning and NLP techniques.
+A production-ready **Email Spam Classifier** built using **Machine Learning and Natural Language Processing (NLP)**.  
+This project classifies emails as **Spam** or **Not Spam (Ham)** using a clean, modular, and testable codebase.
+
+---
+
+## 🚀 Project Overview
+
+Email spam detection is a classic NLP problem.  
+In this project, raw email text is cleaned, transformed into numerical features, and classified using a trained Machine Learning model.
+
+The project follows an **industry-level structure** with proper separation of:
+- data
+- notebooks
+- source code
+- models
+- tests
+
+---
 
 ## 📁 Project Structure
+
+```text
 email-spam-classifier/
 │
 ├── data/
@@ -33,26 +52,3 @@ email-spam-classifier/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-## ⚙️ Workflow
-1. Data preprocessing & cleaning
-2. Text transformation using NLP
-3. Feature extraction using TF-IDF
-4. Model training & evaluation
-5. Model persistence using Pickle
-6. Prediction using modular app
-
-## 🛠 Tech Stack
-- Python
-- Pandas, NumPy
-- Scikit-learn
-- NLTK
-- PyTest
-
-## 📊 Model Output
-- Spam / Not Spam classification
-
-## 🚀 How to Run
-```bash
-pip install -r requirements.txt
-python src/app.py
